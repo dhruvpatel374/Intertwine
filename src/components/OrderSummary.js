@@ -14,7 +14,6 @@ const OrderSummary = ({
       <div className="basis-5/12 h-fit sticky top-40 p-8 rounded-md border shadow-md my-8 md:my-8">
         <h2 className="text-xl font-bold border-b pb-4">Order Summary</h2>
 
-        {/* Order details */}
         <div className="py-4 text-lg space-y-4 border-b">
           <div className="flex justify-between items-center font-semibold">
             <p className="font-normal">Price ({itemCount} items)</p>
@@ -34,7 +33,6 @@ const OrderSummary = ({
           </p>
         </div>
 
-        {/* Total Amount */}
         <div className="py-4 border-b">
           <div className="md:flex justify-between items-center font-bold text-lg md:text-2xl">
             <h1>Total Amount</h1>
@@ -42,7 +40,6 @@ const OrderSummary = ({
           </div>
         </div>
 
-        {/* Place Order Button */}
         <button
           onClick={() => toast.success("Order Placed Successfully")}
           className="w-full block mt-4 uppercase font-bold text-lg bg-orange-400 text-white text-center p-4 rounded-md"
